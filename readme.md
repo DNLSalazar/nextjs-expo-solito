@@ -7,7 +7,7 @@ In the root directory, run `yarn install` to install all dependencies.
 ### Running DB
 - Start docker (or docker desktop).
 - In the project root directory, run `yarn db` to run the DB container
-- If it's the first time running the the DB containe, you'll need to go to `./apps/next/` and run `npx prisma migrate dev` to sync the schema with the container db.
+- If it's the first time running the the DB containe, you can run `yarn db-migrate` to sync the schema with the container db.
 
 ### Running NextJs
 - Make sure `server` in `./packages/app/config/constants.ts` is set to your LAN IP, it should be something like `192.168.1.14`, in windows you can simply run `ipconfig` in your terminal and look at the IPv4 Address of the adapter you're using.
