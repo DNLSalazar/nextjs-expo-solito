@@ -1,0 +1,13 @@
+{
+  "version": "0.0.0",
+  "name": "app",
+  "main": "index.ts",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dripsy": "^4.3.1",
+    "moti": "latest",
+    "nativewind": "^4.1.21",
+    "solito": "4.2.2"
+  },
+  "sideEffects": false
+}
