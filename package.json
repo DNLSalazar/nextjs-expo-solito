@@ -16,6 +16,7 @@
     "native": "cd apps/expo && yarn start",
     "web": "cd apps/next && yarn next",
     "db": "docker compose -f ./docker-compose.db.yml up -d --build",
+    "db-migrate": "cd ./apps/next && npx prisma migrate dev",
     "db-down": "docker compose -f ./docker-compose.db.yml down"
   },
   "resolutions": {

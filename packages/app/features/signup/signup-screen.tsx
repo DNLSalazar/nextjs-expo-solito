@@ -12,7 +12,7 @@ export function SignupScreen() {
     mutationFn: async (data: { email: string, pass: string }) => {
       try {
         console.log("making request for login", data);
-        const result = await axios.post(`${SERVER_URL}api/signup`, {
+        const result = await axios.post(`${SERVER_URL}/api/signup`, {
           email: data.email, pass: data.pass
         });
 

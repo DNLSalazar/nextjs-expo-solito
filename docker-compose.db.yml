@@ -1,6 +1,6 @@
 services:
   db:
-    container_name: expo_PoC-db
+    container_name: expo_poc_db
     image: postgres
     restart: always
     environment:
@@ -10,7 +10,7 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - expo_PoC:/dev/shm
+      - expo_poc:/var/lib/postgresql/data
 
   adminer:
     image: adminer
@@ -21,4 +21,4 @@ services:
      - db
 
 volumes:
-  expo_PoC:
+  expo_poc:

@@ -2,6 +2,8 @@
 
 ## Steps to run
 
+In the root directory, run `yarn install` to install all dependencies.
+
 ### Running DB
 - Start docker (or docker desktop).
 - In the project root directory, run `yarn db` to run the DB container
@@ -17,6 +19,8 @@
 - In the project root directory, run `yarn native`.
 - On the target device, make sure you have `Expo go` installed. If it is an emulator, press `a` in the terminal where you're runnign `yarn native` to install `Expo Go` in your device.
 - If you have `Expo Go` installed and the application is not running, go to expo go and enter the address that `yarn native` shows in the terminal.
+
+When you're done working, remember to run `yarn db-down` to stop the db container.
 
 ## Project structure
 
